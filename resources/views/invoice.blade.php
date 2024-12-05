@@ -125,14 +125,14 @@
         <div class="inv-title">
             <h1 style="color: #1A202C">Invoice # {{ rand() }}__{{ $reservation->id }}</h1>
         </div>
-        <p style="margin-bottom: 30px; font-weight: bold; color: #1A202C">You can go to any of our stores near you and
-            present your reservation invoice (digital or printed) and then pay and get your car</p>
+        <p style="margin-bottom: 30px; font-weight: bold; color: #1A202C">Anda dapat pergi ke salah satu toko kami di dekat Anda dan
+            tunjukkan faktur reservasi Anda (digital atau cetak) lalu bayar dan ambil mobil Anda</p>
         <div class="inv-header">
             <div>
                 <h2 style="color: #1A202C">Real Rent Car</h2>
                 <ul>
                     <li>ENRICO JUNIO </li>
-                    <li>TIZNIT</li>
+                    <li>ENJR</li>
                     <li>+6289629826885 | enrico26junio@gmail.com</li>
                 </ul>
                 <h2>Client</h2>
