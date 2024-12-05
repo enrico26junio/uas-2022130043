@@ -24,7 +24,7 @@ class ReservationController extends Controller
     public function create($car_id)
     {
         $user = auth()->user();
-        $car = Car::find($car_id);
+        $car = Car::findOrFail($car_id); // Menggunakan findOrFail untuk validasi
         return view('reservation.create', compact('car', 'user'));
     }
 
@@ -41,16 +41,17 @@ class ReservationController extends Controller
         ]);
 
 
-        $car = Car::find($car_id);
+        $car = Car::findOrFail($car_id);
         $user = Auth::user();
 
-        $start = Carbon::parse($request->start_date);
-        $end = Carbon::parse($request->end_date);
+        $activeReservations = Reservation::where('user_id', $user->id)
+        ->whereIn('status', ['Pending', 'Ongoing'])
+        ->count();
 
         // Check if the user has more than 2 reservations
         $userReservationsCount = Reservation::where('user_id', $user->id)->count();
-        if ($userReservationsCount >= 2) {
-            return redirect()->back()->with('error', 'You cannot have more than 2 active reservations 😉.');
+        if ($userReservationsCount >= 10) {
+            return redirect()->back()->with('error', 'You cannot have more than 2 active reservations .');
         }
 
         // extract start and end date from the request
@@ -144,3 +145,9 @@ class ReservationController extends Controller
         //
     }
 }
+
+function rupiah($number)
+{
+    return 'Rp. ' . number_format($number, 2, ',', '.');
+}
+

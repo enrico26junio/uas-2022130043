@@ -22,8 +22,8 @@ return new class extends Migration
             $table->date('start_date');
             $table->date('end_date');
             $table->integer('days');
-            $table->decimal('price_per_day', 10, 2);
-            $table->decimal('total_price');
+            $table->integer('price_per_day'); // rupiah
+            $table->integer('total_price'); // rupiah
             $table->string('status')->default('active');
             $table->string('payment_method');
             $table->string('payment_status')->default('pending');
@@ -39,3 +39,4 @@ return new class extends Migration
         Schema::dropIfExists('reservations');
     }
 };
+

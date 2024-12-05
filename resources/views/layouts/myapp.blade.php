@@ -280,11 +280,11 @@
     </main>
     {{-- --------------------------------------------------------------- Footer  --------------------------------------------------------------- --}}
     @if (Auth::check() && Auth::user()->role == 'admin')
-        <footer class="px-4 h-[100px]  sm:p-6 bg-gray-800 flex justify-center items-center">
-            <p class="text-gray-100 font-car font-medium text-5xl ">admin panel</p>
+        <footer class="px-4 h-[100px]  sm:p-6 bg-black flex justify-center items-center">
+            <p class="text-white font-car font-medium text-5xl ">admin panel</p>
         </footer>
     @else
-        <footer class="px-4  sm:p-6 bg-gray-800">
+        <footer class="px-4  sm:p-6 bg-black">
             <div class="pt-10 mx-auto max-w-screen-xl relative">
                 <div class="md:flex md:justify-between">
                     <div class="mb-12 md:mb-0 flex justify-center ">

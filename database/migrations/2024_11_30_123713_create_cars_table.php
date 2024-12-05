@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('brand');
             $table->string('model');
             $table->string('engine');
-            $table->decimal('price_per_day', 8, 2);
+            $table->decimal('price_per_day', 15, 2); // Changed to accommodate larger currency values
             $table->string('image')->nullable();
             $table->string('quantity');
             $table->string('status')->default('available');
@@ -35,3 +35,4 @@ return new class extends Migration
         Schema::dropIfExists('cars');
     }
 };
+
