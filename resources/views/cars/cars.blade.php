@@ -10,14 +10,14 @@
                 <input type="text" placeholder="model" name="model"
                     class="block  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-pr-400 sm:text-sm sm:leading-6"
                 >
-                <input type="number" placeholder="$ minimum price " name="min_price"
+                <input type="number" placeholder="Rp minimum price " name="min_price"
                     class="block  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-pr-400 sm:text-sm sm:leading-6"
                 >
-                <input type="number" placeholder="$ maximum price " name="max_price"
+                <input type="number" placeholder="Rp maximum price " name="max_price"
                     class="block  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-pr-400 sm:text-sm sm:leading-6"
                 >
                 </div>
-                <button class="bg-pr-400 rounded-md text-white p-2 w-20 font-medium hover:bg-pr-500" type="submit" placeholder="brand"> Search</button>
+                <button class="bg-blue-500 rounded-md text-white p-2 w-20 font-medium hover:bg-blue-600" type="submit" placeholder="brand"> Search</button>
             </div>
         </form>
     </div>
@@ -39,9 +39,9 @@
                     </div>
                     <div class="mt-2 mb-5 flex items-center justify-between">
                         <p>
-                            <span class="text-3xl font-bold text-slate-900">{{ $car->price_per_day }}</span>
+                            <span class="text-3xl font-bold text-slate-900">Rp {{ number_format($car->price_per_day, 0, ',', '.') }}</span>
                             <span
-                                class="text-sm text-slate-900 line-through">{{ intval(($car->price_per_day * 100) / (100 - $car->reduce)) }}
+                                class="text-sm text-slate-900 line-through">Rp {{ number_format(intval(($car->price_per_day * 100) / (100 - $car->reduce)), 0, ',', '.') }}
                             </span>
                         </p>
 

@@ -1,7 +1,6 @@
 @extends('layouts.myapp')
 @section('content')
     <main>
-        <div class="bg-sec-100 ">
             {{-- hero --}}
             <div class="flex justify-center md:py-28 py-12 mx-auto max-w-screen-xl">
                 <div class="flex  flex-col justify-center md:w-3/5  mx-12 md:ms-20 md:mx-0">
@@ -17,7 +16,7 @@
                     <div class="flex justify-center md:justify-start mt-12 md:w-2/3 me-12 md:-ms-12">
                         <a href="/cars">
                             <button
-                                class="bg-pr-400 p-2 border-2 border-white rounded-md text-white hover:bg-pr-500 w-32 md:me-12 md:mx-12 mx-7 font-bold ">CARS</button>
+                                class="bg-blue-500 p-2 border-2 border-white rounded-md text-white hover:bg-blue-600 w-32 md:me-12 md:mx-12 mx-7 font-bold ">CARS</button>
                     </div>
                 </div>
                 <div class="md:w-3/5 hidden md:block  ">
@@ -30,16 +29,17 @@
 
             <div class="mx-auto max-w-screen-xl">
                 <div class="flex align-middle justify-center">
-                    <hr class=" mt-8 h-0.5 w-2/5 bg-blue">
-                    <p class="my-2 mx-8  p-2 font-car font-bold text-blue text-lg ">CARS</p>
-                    <hr class=" mt-8 h-0.5 w-2/5 bg-blue">
+                    <hr class=" mt-8 h-0.5 w-2/5 bg-blue-500">
+                    <p class="my-2 mx-8  p-2 font-car font-bold text-blue-500 text-lg ">CARS</p>
+                    <hr class=" mt-8 h-0.5 w-2/5 bg-blue-500">
                     <hr>
                 </div>
                 <div class="   md:mr-16 mr-4 mb-4 flex justify-end">
                     <a href="/cars">
                         <button
-                            class="border-2 border-blue text-pr-400 w-16 p-1 rounded-md hover:bg-blue hover:text-white">See
+                            class="border-2 border-blue-600 text-blue-500 w-16 p-1 rounded-md hover:bg-blue-600 hover:text-white">See
                             All</button>
+
                     </a>
                 </div>
             </div>
@@ -63,9 +63,9 @@
                             </div>
                             <div class="mt-2 mb-5 flex items-center justify-between">
                                 <p>
-                                    <span class="text-3xl font-bold text-slate-900">{{ $car->price_per_day }}</span>
+                                    <span class="text-3xl font-bold text-slate-900">Rp. {{ number_format($car->price_per_day, 0, ',', '.') }}</span>
                                     <span
-                                        class="text-sm text-slate-900 line-through">{{ intval(($car->price_per_day * 100) / (100 - $car->reduce)) }}
+                                        class="text-sm text-slate-900 line-through">Rp. {{ number_format(intval(($car->price_per_day * 100) / (100 - $car->reduce)), 0, ',', '.') }}
                                     </span>
                                 </p>
 
@@ -107,7 +107,7 @@
                                     }
                                 </style>
                                 <path
-                                    d="M128 40c0-22.1 17.9-40 40-40s40 17.9 40 40V188.2c8.5-7.6 19.7-12.2 32-12.2c20.6 0 38.2 13 45 31.2c8.8-9.3 21.2-15.2 35-15.2c25.3 0 46 19.5 47.9 44.3c8.5-7.7 19.8-12.3 32.1-12.3c26.5 0 48 21.5 48 48v48 16 48c0 70.7-57.3 128-128 128l-16 0H240l-.1 0h-5.2c-5 0-9.9-.3-14.7-1c-55.3-5.6-106.2-34-140-79L8 336c-13.3-17.7-9.7-42.7 8-56s42.7-9.7 56 8l56 74.7V40zM240 304c0-8.8-7.2-16-16-16s-16 7.2-16 16v96c0 8.8 7.2 16 16 16s16-7.2 16-16V304zm48-16c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16s16-7.2 16-16V304c0-8.8-7.2-16-16-16zm80 16c0-8.8-7.2-16-16-16s-16 7.2-16 16v96c0 8.8 7.2 16 16 16s16-7.2 16-16V304z" />
+                                d="M128 40c0-22.1 17.9-40 40-40s40 17.9 40 40V188.2c8.5-7.6 19.7-12.2 32-12.2c20.6 0 38.2 13 45 31.2c8.8-9.3 21.2-15.2 35-15.2c25.3 0 46 19.5 47.9 44.3c8.5-7.7 19.8-12.3 32.1-12.3c26.5 0 48 21.5 48 48v48 16 48c0 70.7-57.3 128-128 128l-16 0H240l-.1 0h-5.2c-5 0-9.9-.3-14.7-1c-55.3-5.6-106.2-34-140-79L8 336c-13.3-17.7-9.7-42.7 8-56s42.7-9.7 56 8l56 74.7V40zM240 304c0-8.8-7.2-16-16-16s-16 7.2-16 16v96c0 8.8 7.2 16 16 16s16-7.2 16-16V304zm48-16c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16s16-7.2 16-16V304c0-8.8-7.2-16-16-16zm80 16c0-8.8-7.2-16-16-16s-16 7.2-16 16v96c0 8.8 7.2 16 16 16s16-7.2 16-16V304z" />
                             </svg>
                         </div>
                     </div>

@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-screen-xl bg-white rounded-md p-6 m-8 ">
         <div class="flex justify-between md:flex-row flex-col ">
             {{-- -------------------------------------------- left -------------------------------------------- --}}
-            <div class="md:w-2/3  md:border-r border-gray-800 p-2">
+            <div class="md:w-2/3  md:border-r border-blue-500 p-2">
 
                 <h2 class=" ms-4 max-w-full font-car md:text-6xl text-4xl">{{ $car->brand }} {{ $car->model }}
                     {{ $car->engine }}
@@ -22,9 +22,9 @@
                 </div>
 
                 <div class=" flex items-center justify-around mt-10 me-10">
-                    <div class="w-1/5 md:w-1/3 h-[0.25px] bg-gray-500 "> </div>
+                    <div class="w-1/5 md:w-1/3 h-[0.25px] bg-blue-500 "> </div>
                     <p>Order Informations</p>
-                    <div class="w-1/5 md:w-1/3 h-[0.25px] bg-gray-500 "> </div>
+                    <div class="w-1/5 md:w-1/3 h-[0.25px] bg-blue-500 "> </div>
 
                 </div>
 
@@ -41,7 +41,7 @@
                                     Name</label>
                                 <div class="mt-2">
                                     <input type="text" name="full-name" id="full-name" value="{{ $user->name }}"
-                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6">
+                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-blue-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6">
                                 </div>
                                 @error('name')
                                     <span class="text-red-500">{{ $message }}</span>
@@ -53,7 +53,7 @@
                                     class="block text-sm font-medium leading-6 text-gray-900">Email</label>
                                 <div class="mt-2">
                                     <input type="text" name="email" id="email" value="{{ $user->email }}"
-                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6">
+                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-blue-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm sm:leading-6">
                                 </div>
                                 @error('email')
                                     <span class="text-red-500">{{ $message }}</span>
@@ -187,4 +187,3 @@
         });
     </script>
 @endsection
-

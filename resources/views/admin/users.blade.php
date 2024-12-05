@@ -5,10 +5,10 @@
         {{-- Admins --}}
         <div id="reservations" class="mt-12">
             <div class="flex align-middle justify-center">
-                <hr class=" mt-8 h-0.5 w-1/2 bg-pr-500">
+                <hr class=" mt-8 h-0.5 w-1/2 bg-blue-500">
                 <p class="my-2 mx-8  p-2 font-car font-bold text-gray-600 text-lg ">Admins</p>
-                <hr class=" mt-8 h-0.5 w-1/2 bg-pr-500">
-                <a href="{{ route('addAdmin') }}" class="flex  w-40  border-2 border-pr-500 hover:text-white hover:bg-pr-400 font-car font-medium p-1 " >
+                <hr class=" mt-8 h-0.5 w-1/2 bg-blue-500">
+                <a href="{{ route('addAdmin') }}" class="flex  w-40  border-2 border-blue-600 hover:text-white hover:bg-blue-400 font-car font-medium p-1 " >
                     <button>add new admin</button>
                 </a>
                 <hr>
@@ -36,9 +36,9 @@
 
         <div id="reservations" class="mt-12">
             <div class="flex align-middle justify-center">
-                <hr class=" mt-8 h-0.5 w-1/2 bg-pr-500">
+                <hr class=" mt-8 h-0.5 w-1/2 bg-blue-500">
                 <p class="my-2 mx-8  p-2 font-car font-bold text-gray-600 text-lg ">Clients</p>
-                <hr class=" mt-8 h-0.5 w-1/2 bg-pr-500">
+                <hr class=" mt-8 h-0.5 w-1/2 bg-blue-500">
                 <hr>
             </div>
 

@@ -26,7 +26,7 @@
     {{-- -------------------------------------------------------------- Header -------------------------------------------------------------- --}}
     @guest
         <header>
-            <nav class="bg-sec-600 border-gray-200 px-4 lg:px-6 py-4 dark:bg-gray-800 ">
+            <nav class="bg-black border-gray-200 px-4 lg:px-6 py-4 dark:bg-gray-800 ">
                 <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl drop-shadow-2xl">
                     {{-- LOGO --}}
                     <a href="{{ route('home') }}" class="flex items-center">
@@ -37,14 +37,14 @@
                     <div class="flex items-center  lg:order-2">
                         <a href="{{ route('login') }}">
                             <button type="button"
-                                class=" px-4 lg:px-5 py-2 lg:py-2.5 mr-2 text-white bg-gradient-to-br from-pr-400 to-pr-300 hover:bg-gradient-to-bl font-medium rounded-lg text-sm ">
+                                class=" px-4 lg:px-5 py-2 lg:py-2.5 mr-2 text-white bg-gradient-to-br from-blue-500 to-blue-700 hover:bg-gradient-to-bl font-medium rounded-lg text-sm ">
                                 login
                             </button>
 
                         </a>
                         <a href="{{ route('register') }}">
                             <button
-                                class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 ">
+                                class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-black rounded-lg group bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 group-hover:from-blue-500 group-hover:via-blue-600 group-hover:to-blue-700 dark:text-black dark:hover:text-gray-900 ">
                                 <span
                                     class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-sec-600 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                                     Register
@@ -55,7 +55,7 @@
 
                         {{-- Mobile menu --}}
                         <button data-collapse-toggle="mobile-menu-2" type="button"
-                            class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                            class="inline-flex items-center p-2 ml-1 text-sm text-black rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                             aria-controls="mobile-menu-2" aria-expanded="false">
                             <span class="sr-only">Open main menu</span>
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -77,19 +77,19 @@
                         <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
                                 <a href="/">
-                                    <div class="group text-center">
+                                    <div class="group text-center text-white">
                                         <div class="group-hover:cursor-pointer">Home</div>
                                         <div
-                                            class="block invisible bg-pr-400 w-12 h-1 rounded-md text-center -bottom-1 mx-auto relative group-hover:visible">
+                                            class="block invisible bg-blue-500 w-12 h-1 rounded-md text-center -bottom-1 mx-auto relative group-hover:visible">
                                         </div>
                                 </a>
                             </li>
                             <li>
                                 <a href="{{ route('cars') }}">
-                                    <div class="group text-center">
+                                    <div class="group text-center text-white">
                                         <div class="group-hover:cursor-pointer">Cars</div>
                                         <div
-                                            class="block invisible bg-pr-400 w-8 h-1 rounded-md text-center -bottom-1 mx-auto relative group-hover:visible">
+                                            class="block invisible bg-blue-500 w-8 h-1 rounded-md text-center -bottom-1 mx-auto relative group-hover:visible">
                                         </div>
                                 </a>
                             </li>
@@ -100,25 +100,25 @@
         </header>
     @else
         <header>
-            <nav class="bg-sec-600 border-gray-200 px-4 lg:px-6 py-4 dark:bg-gray-800">
-                <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                    {{-- LOGO --}}
+            <nav class="bg-black border-gray-200 px-4 lg:px-6 py-4 dark:bg-gray-800 ">
+                <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl drop-shadow-2xl">
+                   {{-- LOGO --}}
                     <a href="{{ route('home') }}" class="flex items-center">
-                        <img loading="lazy" src="/images/logos/LOGO ENJR.jpg" class="mr-3 h-12" alt="Flowbite Logo" />
+                        <img loading="lazy" src="/images/logos/Logo ENJR.jpg" class="mr-3 h-12" alt="Flowbite Logo" />
                     </a>
 
                     {{-- Dropdown button --}}
 
 
                     @if (Auth::user()->role == 'admin')
-                        <div class="hidden justify-between mb-6 items-center w-full lg:flex lg:w-auto" id="mobile-menu-2">
-                            <ul class="flex flex-col  font-medium lg:flex-row lg:space-x-8 lg:mt-0 ">
+                        <div class="hidden justify-between mb-6 items-center w-full lg:flex lg:w-auto bg-black" id="mobile-menu-2">
+                            <ul class="flex flex-col font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                                 <li>
                                     <a href='{{ route('adminDashboard') }}'>
-                                        <div class="group text-center">
+                                        <div class="group text-center text-white">
                                             <div class="group-hover:cursor-pointer">Dashboard</div>
                                             <div
-                                                class="block invisible bg-pr-400 w-20 h-1 rounded-md text-center -bottom-1 mx-auto relative group-hover:visible">
+                                                class="block invisible bg-blue-500 w-20 h-1 rounded-md text-center -bottom-1 mx-auto relative group-hover:visible">
                                             </div>
                                     </a>
 
@@ -126,19 +126,19 @@
 
                                 <li class=' '>
                                     <a href="{{ route('cars.index') }}">
-                                        <div class="group text-center">
+                                        <div class="group text-center text-white">
                                             <div class="group-hover:cursor-pointer ">Cars</div>
                                             <div
-                                                class="block invisible bg-pr-400 w-8 h-1 rounded-md text-center -bottom-1 mx-auto relative group-hover:visible">
+                                                class="block invisible bg-blue-500 w-8 h-1 rounded-md text-center -bottom-1 mx-auto relative group-hover:visible">
                                             </div>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="{{ route('users') }}">
-                                        <div class="group text-center">
+                                        <div class="group text-center text-white">
                                             <div class="group-hover:cursor-pointer">Users</div>
                                             <div
-                                                class="block invisible bg-pr-400 w-10 h-1 rounded-md text-center -bottom-1 mx-auto relative group-hover:visible">
+                                                class="block invisible bg-blue-500 w-10 h-1 rounded-md text-center -bottom-1 mx-auto relative group-hover:visible">
                                             </div>
                                     </a>
                                 </li>
@@ -158,7 +158,7 @@
                         </button>
 
                         <div id="dropdown"
-                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            class="z-10 hidden bg-blue-500 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                 aria-labelledby="dropdownDefaultButton">
                                 <li>
@@ -181,15 +181,15 @@
                             </ul>
                         </div>
                     @else
-                        <div class="hidden justify-between items-center w-full lg:flex lg:w-auto" id="mobile-menu-2">
+                        <div class="hidden justify-between items-center w-full lg:flex lg:w-auto text-black" id="mobile-menu-2">
                             <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                                 <li>
 
                                     <a href="/">
-                                        <div class="group text-center">
+                                        <div class="group text-center text-white">
                                             <div class="group-hover:cursor-pointer">Home</div>
                                             <div
-                                                class="block invisible bg-pr-400 w-12 h-1 rounded-md text-center -bottom-1 mx-auto relative group-hover:visible">
+                                                class="block invisible bg-blue-500 w-12 h-1 rounded-md text-center -bottom-1 mx-auto relative group-hover:visible">
                                             </div>
                                         </div>
                                     </a>
@@ -199,10 +199,10 @@
                                 </li>
                                 <li>
                                     <a href="{{ route('cars') }}">
-                                        <div class="group text-center">
+                                        <div class="group text-center text-white">
                                             <div class="group-hover:cursor-pointer">Cars</div>
                                             <div
-                                                class="block invisible bg-pr-400 w-8 h-1 rounded-md text-center -bottom-1 mx-auto relative group-hover:visible">
+                                                class="block invisible bg-blue-500 w-8 h-1 rounded-md text-center -bottom-1 mx-auto relative group-hover:visible">
                                             </div>
                                         </div>
                                     </a>

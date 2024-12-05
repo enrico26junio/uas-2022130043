@@ -5,7 +5,8 @@
             <div class="my-6 py-6 px-4 bg-white rounded-md flex justify-start items-center flex-wrap md:flex-nowrap gap-y-4 md:gap-y-0">
                 <div class="flex justify-center w-1/2 md:w-1/4">
                     <img loading="lazy" class="w-44 h-44 rounded-full border-2 border-pr-400 shadow-lg shadow-pr-400/50"
-                        src="/images/logos/Logo ENJR.jpg" alt="{{ Auth::user()->name }}">
+                        src="/images/logos/Logo ENJR.jpg" alt="{{ 
+                        Auth::user()->name }}">
                 </div>
                 <div class="w-1/2 md:w-1/4">
                     <h2 class="font-medium text-slate-600 text-5xl">{{ Auth::user()->name }}</h2>
@@ -117,8 +118,10 @@
 
                             <div class="mt-8 text-center w-full px-2">
                                 <a href="{{ route('invoice', ['reservation' => $reservation->id]) }}" target="_blank">
-                                    <button class="bg-pr-400 p-3 text-white font-bold hover:bg-black w-full rounded-md ">
-                                        Get Reservation Invoice</button>
+                                    <button
+                                        class="bg-blue p-3 text-white font-bold hover:bg-black w-full rounded-md focus:outline-none focus:ring-4 focus:ring-blue-300">
+                                        Get Reservation Invoice
+                                    </button>
                                 </a>
                             </div>
 
@@ -130,7 +133,20 @@
                         <h2 class="font-medium text-2xl ">There no reservations yet</h2>
                     </div>
                 @endforelse
+<!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+<style>
+    svg {
+        fill: #179ac2
+    }
+</style>
+<path
+    d="M128 40c0-22.1 17.9-40 40-40s40 17.9 40 40V188.2c8.5-7.6 19.7-12.2 32-12.2c20.6 0 38.2 13 45 31.2c8.8-9.3 21.2-15.2 35-15.2c25.3 0 46 19.5 47.9 44.3c8.5-7.7 19.8-12.3 32.1-12.3c26.5 0 48 21.5 48 48v48 16 48c0 70.7-57.3 128-128 128l-16 0H240l-.1 0h-5.2c-5 0-9.9-.3-14.7-1c-55.3-5.6-106.2-34-140-79L8 336c-13.3-17.7-9.7-42.7 8-56s42.7-9.7 56 8l56 74.7V40zM240 304c0-8.8-7.2-16-16-16s-16 7.2-16 16v96c0 8.8 7.2 16 16 16s16-7.2 16-16V304zm48-16c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16s16-7.2 16-16V304c0-8.8-7.2-16-16-16zm80 16c0-8.8-7.2-16-16-16s-16 7.2-16 16v96c0 8.8 7.2 16 16 16s16-7.2 16-16V304z" />
+</svg>
+</div>
+</div>
+</div>
 
+</div>
             </div>
 
         </div>

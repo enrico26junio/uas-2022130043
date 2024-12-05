@@ -1,17 +1,17 @@
 @extends('layouts.myapp')
 @section('content')
-    <div class="max-w-screen-xl p-3 mx-auto mt-10 bg-blue-200 rounded-md shadow-xl">
+    <div class="max-w-screen-xl p-3 mx-auto mt-10 bg-green-200 rounded-md shadow-xl">
         <form action="">
            <div class="flex justify-center md:flex-row flex-col md:gap-28 gap-4">
                 <div class="flex justify-evenly md:flex-row flex-col md:gap-16 gap-2">
                     <input type="text" placeholder="brand" name="brand"
-                        class="block  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-400 sm:text-sm sm:leading-6">
+                        class="block  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-400 sm:text-sm sm:leading-6">
                     <input type="text" placeholder="model" name="model"
-                        class="block  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-400 sm:text-sm sm:leading-6">
+                        class="block  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-400 sm:text-sm sm:leading-6">
                     <input type="number" placeholder="$ minimum price " name="min_price"
-                        class="block  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-400 sm:text-sm sm:leading-6">
+                        class="block  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-400 sm:text-sm sm:leading-6">
                     <input type="number" placeholder="$ maximum price " name="max_price"
-                        class="block  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-400 sm:text-sm sm:leading-6">
+                        class="block  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-400 sm:text-sm sm:leading-6">
                 </div>
                 <div>
                     <button class="w-20 p-2 font-medium text-white rounded-md bg-blue-500 hover:bg-blue-600" type="submit">
@@ -33,7 +33,7 @@
                 <a class="relative flex mx-3 mt-3 overflow-hidden h-60 rounded-xl" href="{{ route('car.reservation', ['car' => $car->id]) }}">
                     <img loading="lazy" class="object-cover" src="{{ $car->image }}" alt="product image" />
                     <span
-                        class="absolute top-0 left-0 px-2 m-2 text-sm font-medium text-center text-white rounded-full bg-blue-500">{{ $car->reduce }}
+                        class="absolute top-0 left-0 px-2 m-2 text-sm font-medium text-center text-white rounded-full bg-green-500">{{ $car->reduce }}
                         %
                         OFF</span>
                 </a>
@@ -52,7 +52,7 @@
 
                         <div class="flex items-center">
                             @for ($i = 0; $i < $car->stars; $i++)
-                                <svg aria-hidden="true" class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20"
+                                <svg aria-hidden="true" class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
@@ -60,11 +60,11 @@
                                 </svg>
                             @endfor
                             <span
-                                class="mr-2 ml-3 rounded bg-blue-500 px-2.5 py-0.5 text-xs font-semibold">{{ $car->stars }}.0</span>
+                                class="mr-2 ml-3 rounded bg-green-500 px-2.5 py-0.5 text-xs font-semibold">{{ $car->stars }}.0</span>
                         </div>
                     </div>
                     <a href="{{ route('car.reservation', ['car' => $car->id]) }}"
-                        class="flex items-center justify-center rounded-md bg-blue-500 hover:bg-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300">
+                        class="flex items-center justify-center rounded-md bg-green-500 hover:bg-green-600 px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-green-300">
                         <svg id="thisicon" class="w-6 h-6 mr-4" xmlns="http://www.w3.org/2000/svg" height="1em"
                             viewBox="0 0 512 512">
                             <style>

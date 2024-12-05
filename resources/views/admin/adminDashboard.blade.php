@@ -13,8 +13,8 @@
                     <div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
                         <!-- Card -->
                         <a href="{{ route('users') }}">
-                            <div class="flex items-center p-4 bg-white rounded-lg shadow-xs hover:bg-pr-200  ">
-                                <div class="p-3 mr-4 bg-pr-400 rounded-full ">
+                            <div class="flex items-center p-4 bg-white rounded-lg shadow-xs hover:bg-blue-200  ">
+                                <div class="p-3 mr-4 bg-blue-500 rounded-full ">
                                     <svg style="fill: #fff" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                         <path
                                             d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z">
@@ -22,7 +22,7 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <p class="text-lg font-medium text-pr-400 ">
+                                    <p class="text-lg font-medium text-blue-500 ">
                                         Total clients
                                     </p>
                                     <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
@@ -33,8 +33,8 @@
 
                         <!-- Card -->
                         <a href="{{ route('cars.index') }}">
-                            <div class="flex items-center p-4 bg-white rounded-lg shadow-xs  hover:bg-pr-200 ">
-                                <div class="p-3 mr-4 bg-pr-400 rounded-full ">
+                            <div class="flex items-center p-4 bg-white rounded-lg shadow-xs  hover:bg-blue-200 ">
+                                <div class="p-3 mr-4 bg-blue-500 rounded-full ">
                                     <svg style="fill: #fff" xmlns="http://www.w3.org/2000/svg" height="1em"
                                         viewBox="0 0 512 512">
                                         <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -44,7 +44,7 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <p class="text-lg font-medium text-pr-400 ">
+                                    <p class="text-lg font-medium text-blue-500 ">
                                         Available Cars
                                     </p>
                                     <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
@@ -56,8 +56,8 @@
 
                         <!-- Card -->
                         <a href="javascript:void(0);" onclick="scrollToReservatios();">
-                            <div class="flex items-center p-4 bg-white rounded-lg shadow-xs  hover:bg-pr-200 ">
-                                <div class="p-3 mr-4 bg-pr-400 rounded-full ">
+                            <div class="flex items-center p-4 bg-white rounded-lg shadow-xs  hover:bg-blue-200 ">
+                                <div class="p-3 mr-4 bg-blue-500 rounded-full ">
                                     <svg style="fill: #fff" xmlns="http://www.w3.org/2000/svg" height="1em"
                                         viewBox="0 0 512 512">
                                         <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -67,7 +67,7 @@
                                     </svg>
                                 </div>
                                 <div>
-                                    <p class="text-lg font-medium text-pr-400 ">
+                                    <p class="text-lg font-medium text-blue-500 ">
                                         Active Reservations
                                     </p>
                                     <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
@@ -82,9 +82,9 @@
 
                     <div class="mt-12">
                         <div class="flex align-middle justify-center">
-                            <hr class=" mt-8 h-0.5 w-1/2 bg-pr-500">
+                            <hr class=" mt-8 h-0.5 w-1/2 bg-blue-500">
                             <p class="my-2 mx-8  p-2 font-car font-bold text-gray-600 text-lg ">RESERVATIONS</p>
-                            <hr class=" mt-8 h-0.5 w-1/2 bg-pr-500">
+                            <hr class=" mt-8 h-0.5 w-1/2 bg-blue-500">
                             <hr>
                         </div>
 
@@ -199,12 +199,12 @@
 
                                             <td class="px-4 py-3 w-36 text-sm flex flex-col justify-center">
 
-                                                <a class="p-2 mb-1 text-white bg-pr-500 hover:bg-pr-400 font-medium rounded text-center"
+                                                <a class="p-2 mb-1 text-white bg-blue-500 hover:bg-blue-600 font-medium rounded text-center"
                                                     href="{{ route('editStatus', ['reservation' => $reservation->id]) }}">
                                                     <button>Edit Status </button>
                                                 </a>
 
-                                                <a class="p-2 mb-1 text-white bg-indigo-500 hover:bg-indigo-600 font-medium rounded text-center"
+                                                <a class="p-2 mb-1 text-white bg-red-500 hover:bg-indigo-600 font-medium rounded text-center"
                                                     href="{{ route('editPayment', ['reservation' => $reservation->id]) }}">
                                                     <button>Edit payment </button>
                                                 </a>

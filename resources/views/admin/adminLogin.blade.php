@@ -20,9 +20,9 @@
             <div class="mb-6">
                 <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                     email</label>
-                <input type="email" id="email" name="email" value={{ old('email') ? old('email') : 'test_admin@email.com' }}
+                <input type="email" id="email" name="email" value={{ old('email') ? old('email') : 'enjr_admin@email.com' }}
                         class="bg-pr-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pr-500 focus:border-pr-500 block w-full p-2.5 "
-                        placeholder="test_admin@email.com">
+                        placeholder="enjr_admin@email.com">
                     @error('email')
                         <span>
                             <strong class="text-red-500">{{ $message }}</strong>

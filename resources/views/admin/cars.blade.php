@@ -2,7 +2,7 @@
 @section('content')
     <div class="my-20 flex flex-col justify-center  items-center mx-auto max-w-screen-xl">
         <a href="{{ route('cars.create') }}">
-            <button class="mb-6 bg-pr-400 p-2 text-white drop-shadow-lg hover:bg-pr-600 hover:cursor-pointer rounded-md ">
+            <button class="mb-6 bg-blue-500 p-2 text-white drop-shadow-lg hover:bg-blue-600 hover:cursor-pointer rounded-md ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-8 h-8 inline">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -48,7 +48,7 @@
                         <tr
                             class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             <td class="w-4 p-4">
-                                <div class="p-0.5 rounded-md border-2 border-pr-400 ">
+                                <div class="p-0.5 rounded-md border-2 border-blue-700 ">
 
                                     <img loading="lazy" src="{{  $car->image }}" alt="car image">
                                 </div>

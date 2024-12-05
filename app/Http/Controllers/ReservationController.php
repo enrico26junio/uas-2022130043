@@ -51,7 +51,7 @@ class ReservationController extends Controller
         // Check if the user has more than 2 reservations
         $userReservationsCount = Reservation::where('user_id', $user->id)->count();
         if ($userReservationsCount >= 10) {
-            return redirect()->back()->with('error', 'You cannot have more than 2 active reservations .');
+            return redirect()->back()->with('error', 'You cannot have more than 10 active reservations .');
         }
 
         // extract start and end date from the request
