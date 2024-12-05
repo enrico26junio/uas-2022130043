@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('brand', 100); // Batasi panjang string
             $table->string('model', 100);
             $table->string('engine', 100)->nullable(); // Bisa nullable jika informasi mesin tidak wajib
-            $table->decimal('price_per_day', 15, 2)->nullable(); // Gunakan decimal untuk nilai uang
+            $table->decimal('price_per_day', 20, 5)->nullable(); // Gunakan decimal untuk nilai uang
             $table->string('image')->nullable(); // URL atau path gambar
             $table->unsignedInteger('quantity')->default(1); // Tidak boleh negatif
             $table->string('status', 50)->default('available'); // Batasi panjang untuk efisiensi
