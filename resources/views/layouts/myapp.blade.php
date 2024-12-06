@@ -146,7 +146,7 @@
                             </ul>
                         </div>
                         <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                            class="text-black bg-pr-400 hover:bg-pr-600 font-medium rounded-lg text-sm px-3 py-2.5 text-center inline-flex items-center "
+                            class="text-black bg-blue-500 hover:bg-blue-600 font-medium rounded-lg text-sm px-3 py-2.5 text-center inline-flex items-center "
                             type="button">
                             <img loading="lazy" src="/images/user.png" width="24" alt="user icon" class="mr-3">
                             <p> Admin ( {{ Auth::user()->name }} ) </p>
@@ -158,7 +158,7 @@
                         </button>
 
                         <div id="dropdown"
-                            class="z-10 hidden bg-blue-500 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                 aria-labelledby="dropdownDefaultButton">
                                 <li>
@@ -231,11 +231,11 @@
 
                                 <li>
                                     <a href="{{ route('clientReservation') }}"
-                                        class="block px-4 py-2 hover:bg-pr-200 ">Reservations</a>
+                                        class="block px-4 py-2 hover:bg-gray-100 ">Reservations</a>
                                 </li>
 
                                 <li>
-                                    <a class="block px-4 py-2 hover:bg-pr-200 " href="{{ route('logout') }}"
+                                    <a class="block px-4 py-2 hover:bg-gray-100 " href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                                     document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
@@ -300,7 +300,7 @@
                 <div class="sm:flex sm:items-center sm:justify-between md:ms-0 pb-4  ms-32">
                     <span class="text-sm sm:text-center text-gray-400 md:ms-0 -ms-8">© 2024 <a
                             href="https://github.com/enrico26junio/uas-2022130043" target='_blank'
-                            class="hover:underline">Galdi.dev™</a>. All Rights Reserved.
+                            class="hover:underline">ENJR™</a>. All Rights Reserved.
                     </span>
                     <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
                         <a href="https://github.com/enrico26junio/uas-2022130043" target='_blank'

@@ -3,8 +3,8 @@
     <main>
             {{-- hero --}}
             <div class="flex justify-center md:py-28 py-12 mx-auto max-w-screen-xl">
-                <div class="flex  flex-col justify-center md:w-3/5  mx-12 md:ms-20 md:mx-0">
-                    <h1 class=" md:text-start text-center  font-car font-bold text-blue-500 mb-8  md:text-7xl text-4xl "><span class="text-pr-400"> ENJR
+                <div class="flex flex-col justify-center md:w-3/5 mx-12 md:ms-20 md:mx-0">
+                    <h1 class="md:text-start text-center font-car font-bold text-blue-500 mb-8 md:text-7xl text-4xl"><span class="text-blue-900"> ENJR
                         </span>RENTAL
                         TRAVELOKA</h1>
                     <div class="md:w-3/5 md:hidden  ">
@@ -79,11 +79,11 @@
                                         </svg>
                                     @endfor
                                     <span
-                                        class="mr-2 ml-3 rounded bg-pr-300 px-2.5 py-0.5 text-xs font-semibold">{{ $car->stars }}.0</span>
+                                        class="mr-2 ml-3 rounded bg-blue-300 px-2.5 py-0.5 text-xs font-semibold">{{ $car->stars }}.0</span>
                                 </div>
                             </div>
                             <a href="{{ route('car.reservation', ['car' => $car->id]) }}"
-                                class="flex items-center justify-center rounded-md bg-slate-900 hover:bg-pr-400 px-5 py-2.5 text-center text-sm font-medium text-white  focus:outline-none focus:ring-4 focus:ring-blue-300">
+                                class="flex items-center justify-center rounded-md bg-blue-500 hover:bg-black px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300">
                                 <svg id="thisicon" class="mr-4 h-6 w-6" xmlns="http://www.w3.org/2000/svg" height="1em"
                                     viewBox="0 0 512 512">
                                     <style>

@@ -65,7 +65,7 @@
                                 {{ $car->engine }}
                             </td>
                             <td class="px-6 py-4">
-                                {{ $car->price_per_day }}
+                                Rp {{ number_format($car->price_per_day, 0, ',', '.') }}
                             </td>
                             <td class="px-6 py-4">
                                 {{ $car->quantity }}
@@ -117,3 +117,4 @@
         {{ $cars->links('pagination::tailwind') }}
     </div>
 @endsection
+
